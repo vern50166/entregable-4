@@ -1,0 +1,102 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('FONDO.jpg'); /* Cambia fondo.jpg por el nombre real de tu imagen */
+    background-size: cover;              /* La imagen cubre toda la pantalla */
+    background-repeat: no-repeat;        /* Evita que se repita */
+    background-position: center center; /* Centra la imagen */
+    background-attachment: fixed;        /* La imagen no se mueve al hacer scroll */
+    color: #f0f0f0;
+    line-height: 1.6;
+}
+
+
+header, footer {
+    text-align: center;
+    background-color: #6c117f;
+    padding: 20px;
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #503459;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #b577c9;
+    margin-bottom: 15px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul, ol {
+    margin-left: 20px;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #7c348a;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form label {
+    margin-top: 10px;
+}
+
+form input, form button {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+form button {
+    background-color: #f0f0f0;
+    color: #1f1f1f;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #940f8b;
+}
+
+.TORONTO {
+      display: block;
+    margin: 20px auto;
+    border-radius: 10px;
+    position: relative; /* agrega esta línea */
+    z-index: 10;        /* para que esté por encima del fondo */
+    max-width: 100%;
+    height: auto;
+}
